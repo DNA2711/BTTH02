@@ -1,1 +1,0 @@
-<?phpfunction getCon() {    $db = 'btth02_1';    $host = 'localhost';    $user = 'root';    $pass = '1';    $charset = 'utf8mb4';    $dsn = "mysql:host=$host;dbname=$db;charset=$charset";    try {        return new PDO($dsn, $user, $pass);    } catch (PDOException $e) {        throw new PDOException($e->getMessage());    }}
